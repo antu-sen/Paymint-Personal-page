@@ -1,0 +1,143 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+  
+  :root {
+    --divider: #002c15;
+    --bg: #002c15;
+    --btn: #c3f53c;
+    --text-primary: #002c15;
+    --text-secondary: #fff;
+  }
+
+  header {
+    background-color: var(--bg);
+  }
+  /* Navbar  Style*/
+  .Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+  }
+  
+  .menu-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: var(--btn);
+    cursor: pointer;
+  }
+  
+  .close-icon{
+    display: none;
+  }
+  
+  /* Nav Links */
+  .Nav-Links ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+  }
+  
+  .Nav-Links ul li {
+    position: relative;
+  }
+  
+  .Nav-Links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+  }
+  
+  .Nav-Links ul li a:hover {
+    color: var(--btn);
+    transition: 0.3s;
+  }
+  
+  /* Dropdown Menu */
+  .Nav-Links ul li ul {
+    position: absolute;
+    width: 120px;
+    display: none;
+    flex-direction: column;
+    top: 100%;
+    left: 0px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 8px 0;
+    z-index: 999;
+  }
+  
+  .Nav-Links ul li ul li {
+    width: 100%;
+  }
+  
+  .Nav-Links ul li ul li a {
+    padding: 10px 12px;
+    color: var(--btn);
+  }
+  
+  .Nav-Links ul li ul li a:hover {
+    background: rgba(0, 0, 0, 0.06);
+    color: #111;
+  }
+  
+  .Nav-Links ul li:hover>ul {
+    display: flex;
+    gap: 4px;
+  }
+  
+  /* Btn */
+  .Btn-Container {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .Btn-Container a {
+    text-decoration: none;
+  }
+  
+  .btn-one {
+    padding: 10px 18px;
+    background-color: transparent;
+    color: var(--Lime-300, #c3f53c);
+    border: 1px solid var(--Lime-300, #c3f53c);
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+  }
+  
+  .btn-one:hover {
+    background-color: var(--Lime-300, #c3f53c);
+    color: var(--text-primary);
+    transition: 0.3s;
+  }
+  
+  .bto-two {
+    padding: 10px 18px;
+    background-color: var(--Lime-300, #c3f53c);
+    color: var(--text-primary);
+    border: 1px solid var(--Lime-300, #c3f53c);
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+  }
+  
+  .bto-two:hover {
+    background-color: transparent;
+    color: var(--Lime-300, #c3f53c);
+    transition: 0.3s;
+  }
+  
