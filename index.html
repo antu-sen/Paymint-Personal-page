@@ -17,88 +17,175 @@
 </head>
 
 <body>
-    <header>
-        <!-- Navbar -->
-        <nav class="Navbar">
-            <a href="#"><span class="logo"><img src="./Images/Logo.svg" alt="" /></span></a>
+    <div class="wrapper">
+        <div class="container">
+            <!-- NavBar -->
+            <nav class="navbar">
+                <div class="nav-left">
+                    <a href="#" class="logo">
+                       <img src="./Images/Logo.svg" alt="">
+                    </a>
 
-            <button class="menu-btn" id="menuBtn">
-                <i class="fa-solid fa-bars"></i>
-                <i class="fa-solid fa-xmark close-icon"></i>
-            </button>
+                    <ul class="nav-links">
+                        <li class="dropdown">
+                            <a href="#">
+                                Products <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Personal</a></li>
+                                <li><a href="#">Business</a></li>
+                                <li><a href="#">Payments</a></li>
+                            </ul>
+                        </li>
 
-            <div class="Nav-Links" id="navLinks">
-                <ul>
-                    <li class="dropdown">
-                        <a href="#">Products <span><i class="fa-solid fa-angle-down"></i></span></a>
-                        <ul>
-                            <li><a href="#">China</a></li>
-                            <li><a href="#">Bangla</a></li>
-                        </ul>
-                    </li>
+                        <li><a href="#">Pricing</a></li>
 
-                    <li>
-                        <a href="#">Pricing</a>
-                    </li>
+                        <li class="dropdown">
+                            <a href="#">
+                                Company <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </li>
 
-                    <li class="dropdown">
-                        <a href="#">Company <span><i class="fa-solid fa-angle-down"></i></span></a>
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </li>
+                        <li class="dropdown">
+                            <a href="#">
+                                Resources <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Help center</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Guides</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
 
-                    <li class="dropdown">
-                        <a href="#">Resources <span><i class="fa-solid fa-angle-down"></i></span></a>
-                        <ul>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Help</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+                <div class="nav-actions">
+                    <a href="#" class="btn btn-outline">Log in</a>
+                    <a href="#" class="btn btn-solid">Register</a>
+                </div>
+            </nav>
 
-            <div class="Btn-Container">
-                <a href="#" class="btn-one">Log in</a>
-                <a href="#" class="bto-two">Register</a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <!-- Hero Section -->
-        <section>
-            <div id="hero">
-                <!-- Hero-Left -->
-                <div class="hero_left">
-                    <!-- Personal -->
-                    <div>
-                        <img src="./Images/icon.svg" alt="" />
-                        <p>Personal</p>
+             <!-- Hero -->
+            <section class="hero">
+                <div class="hero-wrap">
+                    <div class="hero-left">
+                        <div class="badge-link">
+                            <div class="badge-icon">
+                              <img src="./Images/icon.svg" alt="">
+                              <p>Personal</p>
+                            </div>
+                        </div>
+
+                        <h1 class="hero-title">
+                            The fast and<br />
+                            secure way to<br />
+                            send money.
+                        </h1>
+
+                        <p class="hero-desc">
+                            Join <strong>30+ million</strong> customers saving on global
+                            transfers with Paymint. Send international transfers to
+                            <strong>150+ countries in 35+ currencies</strong> today!
+                        </p>
+
+                        <div class="hero-cta">
+                            <div class="rating-pill">
+                                <div class="rating-stars">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+                                <div class="rating-number">4.8</div>
+                            </div>
+
+                            <div class="secure-pill">
+                                <div class="shield"><img src="./Images/Secquer-icon.svg" alt="">
+                                </div>
+                                <span>Secure Transfers</span>
+                            </div>
+                        </div>
                     </div>
-                    <h1>The fast and secure way to send money.</h1>
-                    <p>Join 30+ million customers saving on global transfers with Paymint. Send international transfers
-                        to 150+ countries in 35+ currencies today!</p>
-                    <!-- Hero-Badges -->
-                    <div class="hero_badges">
-                        <div> <span>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                            </span> 4.8</div>
-                        <div><span><img src="./Images/Secquer-icon.svg" alt=""></span>Secure Transfers</div>
 
+                    <div class="hero-right">
+                        <div class="card-stack">
+                            <div class="card-shadow-block"></div>
+
+                            <div class="transfer-card">
+                                <div class="amount-box">
+                                    <div class="amount-label">You send</div>
+                                    <div class="amount-row">
+                                        <div class="amount-value">
+                                            1,000</div>
+                                        <div class="currency">
+                                            <div class="flag-us"><img src="./Images/US 1.svg" alt=""></div>
+                                            <span>USD</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swap-btn"> <img src="./Images/Arrow.svg" alt="">
+                                </div>
+
+                                <div class="amount-box">
+                                    <div class="amount-label">Recipient gets</div>
+                                    <div class="amount-row">
+                                        <div class="amount-value">898.20</div>
+                                        <div class="currency">
+                                            <div class="flag-eu"><img src="./Images/EU 1.svg" alt=""></div>
+                                            <span>EUR</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="transfer-method">
+                                    <div class="transfer-top">
+                                        <span class="bolt"><img src="./Images/flash.svg" alt=""></span>
+                                        <span>Instant Transfer</span>
+                                    </div>
+
+                                    <div class="transfer-body">
+                                        <div class="bank-icon"><img src="./Images/Trancefer.svg" alt=""></div>
+                                        <div class="bank-text">
+                                            <h4>Bank Transfer</h4>
+                                            <p>Arrive in 20 minutes</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="details">
+                                    <div class="detail-row">
+                                        <div class="label">Rate</div>
+                                        <div class="value">1 USD = 0.8982 EUR</div>
+                                    </div>
+
+                                    <div class="detail-row">
+                                        <div class="label">Fee</div>
+                                        <div class="value">
+                                            <s>3.90 USD</s>
+                                            <strong>(First transfer fee: 0 USD)</strong>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-row">
+                                        <div class="label">Estimated delivery</div>
+                                        <div class="value">
+                                            <strong>Arrive in 20 minutes</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Hero-Right -->
-                 <div>
-                    <img src="./Images/hero-right.svg" alt="">
-                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </div>
+    </div>
+
 </body>
 
 </html>
