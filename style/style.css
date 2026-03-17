@@ -933,6 +933,8 @@
 }
 
 .notification-image {
+    width: 250px;
+
     position: absolute;
     top: -90px;
     right: -150px;
