@@ -1633,12 +1633,153 @@
 .security-image-wrapper {
     max-width: 640px;
     flex: 1;
-   
 }
 
 .security-image-wrapper img {
     width: 100%;
     padding: 0 24px;
-   
 }
+
+/* ============= Coverage ============= */
+/* Coverage Section  */
+#coverage {
+    padding: 128px 0px;
+    background-color: #f2f5f7;
+  }
+  
+  .new_coverage_wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  /* Heading */
+  .heading_container {
+    max-width: 700px;
+    padding: 0 32px;
+  }
+  
+  .coverage_eyebrow {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.25px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 24px;
+  }
+  
+  .coverage_eyebrow::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: var(--btn);
+    bottom: 0;
+    left: 0;
+  }
+  
+  .coverage_title {
+    color: var(--bg);
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 64px;
+    letter-spacing: -2px;
+    padding-bottom: 40px;
+  }
+  
+  /* Pills */
+  .all_pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0 32px;
+  }
+  
+  .pill {
+    padding: 10px 20px;
+    border-radius: 48px;
+    border: 1px solid var(--bg);
+    background: transparent;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+  }
+  
+  .pill:hover {
+    background: var(--bg);
+    color: #fff;
+  }
+  
+  .pill.active {
+    background: var(--btn);
+    border: none;
+  }
+  
+  /* Layout */
+  .coverage_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px;
+    gap: 32px;
+    align-items: flex-start;
+    margin-top: 64px;
+  }
+  
+  /* Flags Section */
+  .flag_section {
+    flex: 1;
+  }
+  
+  .all_flag {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 480px;
+    gap: 32px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .country {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.25px;
+  }
+  
+  .country img {
+    width: 40px;
+  }
+  
+  /* CTA */
+  .country_cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 48px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--bg);
+    transition: 0.3s ease;
+  }
+  
+  .country_cta:hover {
+    color: var(--btn);
+  }
+  .cta_arrow {
+    transition: transform 0.3s ease;
+  }
+  .country_cta:hover .cta_arrow {
+    transform: translateX(5px);
+  }
+  /* Map */
+  .map_container {
+    flex: 1;
+  }
+  .map_container img {
+    width: 100%;
+    max-width: 700px;
+  }
 
