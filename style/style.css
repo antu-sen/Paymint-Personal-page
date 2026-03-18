@@ -1641,7 +1641,6 @@
 }
 
 /* ============= Coverage ============= */
-/* Coverage Section  */
 #coverage {
     padding: 128px 0px;
     background-color: #f2f5f7;
@@ -1781,5 +1780,204 @@
   .map_container img {
     width: 100%;
     max-width: 700px;
+  }
+
+
+/* ============= Common Questions ============= */
+/* Questions Section */
+#question {
+    padding-bottom: 128px;
+    padding-top: 128px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .question-wrapper {
+    max-width: 1280px;
+    margin: 0px auto;
+    padding: 0px 32px;
+    display: flex;
+    justify-content: space-between;
+    gap: 96px;
+  }
+  .question-content-wrapper {
+    max-width: 352px;
+    flex: 1;
+  }
+  .question-para {
+    color: var(--bg);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.25px;
+    display: inline-block;
+    position: relative;
+  }
+  .question-para::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 3px;
+    bottom: 4px;
+    background-color: var(--btn);
+  }
+  
+  .question-title {
+    color: var(--bg);
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 64px;
+    letter-spacing: -2px;
+    padding-top: 24px;
+  }
+  
+  .question-subtitle {
+    color: #454745;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.25px;
+    padding-top: 24px;
+  }
+  
+  .question-child-subtitle-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 48px;
+  }
+  
+  .question-child-subtitle-wrapper p {
+    color: var(--bg);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+  }
+  
+  .question-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 220px;
+    gap: 8px;
+    margin-top: 24px;
+    gap: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 24px;
+    background-color: var(--btn);
+    border-radius: 64px;
+    text-decoration: none;
+    color: var(--bg);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.25px;
+    margin-top: 24px;
+  }
+  
+  .question-btn:hover {
+    background-color: #9de600;
+    color: #002c15;
+  }
+  
+  /* Accordion Wrapper */
+  .question-accordion-wrapper {
+    max-width: 704px;
+    flex: 1;
+  }
+  
+  /* faq */
+  .faq {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .accordion {
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e5ebe5;
+  }
+  
+  /* hide checkbox */
+  .accordion input {
+    display: none;
+  }
+  
+  /* header */
+  .acc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: var(--bg);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+  }
+  /* arrow */
+  .icon {
+    width: 42px;
+    height: 42px;
+    background: var(--btn);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+  
+  .icon img {
+    width: 18px;
+    height: 18px;
+    transition: 0.3s;
+  }
+  
+  .accordion input:checked+.acc-header .icon img {
+    transform: rotate(180deg);
+  }
+  /* content */
+  .acc-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease;
+    color: #454745;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.25px;
+  }
+  .acc-content p {
+    margin-top: 12px;
+  }
+  
+  .acc-content a {
+    color: var(--bg);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.25px;
+  }
+  
+  /* open state */
+  .accordion input:checked~.acc-content {
+    max-height: 200px;
+    margin-top: 16px;
   }
 
