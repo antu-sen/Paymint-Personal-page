@@ -918,6 +918,7 @@
     flex: 1;
     width: 100%;
     max-width: 480px;
+    order: 2;
     background-color: #F2F5F7;
     padding: 20px 20px;
     border-radius: 20px;
@@ -927,13 +928,13 @@
 .notification-image {
     width: 100px;
     position: absolute;
-    top: -20px;
+    top: -4px;
     right: -5px;
 }
 
 .green-container {
     max-width: 372px;
-    height: 50vh;
+    height: 30vh;
     margin: 0 auto;
     background-color: var(--bg);
     border-radius: 24px;
@@ -1084,6 +1085,7 @@
     width: 100%;
     max-width: 480px;
     flex: 1;
+    order: 1;
 }
 
 .real-time-heading {
@@ -1173,5 +1175,240 @@
     transition: 0.3s;
     transform: translateY(-2px);
 }
+/* ============= Send Money ============= */
+#send-money {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.send-money-wrapper {
+    width: 100%;
+    max-width: 480px;
+    padding: 0 0px;
+    margin: 0 auto;
+}
+
+.send-money-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.send-money-para {
+    text-align: center;
+    color: var(--text-primary);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.25px;
+    display: inline-block;
+    position: relative;
+}
+
+.send-money-para::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    width: 100%;
+    bottom: 7px;
+    background-color: var(--btn);
+}
+
+.send-money-heading {
+    max-width: 480px;
+    color: var(--text-primary);
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: -2px;
+    margin-top: 10px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 32px;
+    margin: 40px 0 50px;
+
+}
+
+.cards {
+    width: 100%;
+    max-width: 480px;
+    background-color: var(--bg);
+    border-radius: 24px;
+    padding: 48px 32px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    flex: 1;
+}
+
+.cards h4 {
+    color: var(--btn);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -1px;
+}
+
+.cards p {
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.25px;
+    margin-top: 12px;
+}
+
+/* ============= Zero Fee ============= */
+.zero-card {
+    width: 100%;
+    max-width: 480px;
+    padding: 24px 24px;
+    background: #002c15;
+    border-radius: 24px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    overflow: hidden;
+}
+
+/* Left side */
+.zero-left {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.zero-tag {
+    color: var(--btn);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.25px;
+    display: block;
+    position: relative;
+}
+
+.zero-tag::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    left: 0;
+    height: 2px;
+    bottom: 4px;
+    background-color: #00c805;
+}
+
+.zero-title {
+    font-size: 38px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: -1.8px;
+    padding-top: 12px;
+}
+
+.zero-title span {
+    color: var(--btn);
+}
+
+.zero-subtitle {
+    color: var(--White, #fff);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.25px;
+    max-width: 480px;
+    padding-top: 12px;
+}
+
+.zero-terms {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--White, #fff);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    text-decoration-line: underline;
+    padding-top: 12px;
+}
+
+.zero-info {
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+    border: 2px solid white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+/* Button */
+.zero-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 220px;
+    gap: 8px;
+    margin-top: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 28px;
+    padding-right: 22px;
+    background-color: var(--btn);
+    border: 1px solid var(--btn);
+    border-radius: 40px;
+    text-decoration: none;
+    color: var(--bg);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.25px;
+    transition: 0.3s;
+}
+
+.zero-cta:hover {
+    background-color: transparent;
+    border: 1px solid var(--btn);
+    color: var(--btn);
+    transform: translateY(-2px);
+}
+
+.zero-right {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.zero-right img {
+    width: 100%;
+    height: auto;
+}
+
 
 }
