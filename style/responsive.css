@@ -1664,6 +1664,160 @@
     padding: 0 24px;
 }
 
+/* Coverage Section  */
+#coverage {
+    padding: 50px 50px;
+    background-color: #f2f5f7;
+  }
+  
+  .new_coverage_wrapper {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  
+  /* Heading */
+  .heading_container {
+    width: 100%;
+    max-width: 480px;
+    padding: 0 0px;
+  }
+  
+  .coverage_eyebrow {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.25px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 12px;
+  }
+  
+  .coverage_eyebrow::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: var(--btn);
+    bottom: 0;
+    left: 0;
+  }
+  
+  .coverage_title {
+    color: var(--bg);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: -2px;
+    padding-bottom: 20px;
+  }
+  
+  /* Pills */
+  .all_pills {
+    display: flex;
+    gap: 5px;
+    padding: 0px 0px;
+  }
+  
+  .pill {
+    padding: 10px 20px;
+    border-radius: 48px;
+    border: 1px solid var(--bg);
+    background: transparent;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+  }
+  
+  .pill:hover {
+    background: var(--btn);
+    color: var(--text-primary);
+    border: none;
+  }
+  
+  .pill.active {
+    background: var(--btn);
+    border: none;
+  }
+  
+  /* Layout */
+  .coverage_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0px;
+    gap: 50px;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+  
+  /* Flags Section */
+  .flag_section {
+    flex: 1;
+  }
+  
+  .all_flag {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 30px;
+    max-height: 500px;
+    overflow-y: auto;
+  }
+  
+  .country {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.25px;
+  }
+  
+  .country img {
+    width: 30px;
+  }
+  
+  /* CTA */
+  .country_cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 28px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--bg);
+    transition: 0.3s ease;
+  }
+  
+  .country_cta:hover {
+    color: var(--btn);
+  }
+  
+  .cta_arrow {
+    transition: transform 0.3s ease;
+  }
+  
+  .country_cta:hover .cta_arrow {
+    transform: translateX(5px);
+  }
+  
+  /* Map */
+  .map_container {
+    width: 100%;
+    max-width: 480px;
+    flex: 1;
+  }
+  
+  .map_container img {
+    width: 100%;
+    max-width: 380px;
+  }
+
+
+
 
 
 
